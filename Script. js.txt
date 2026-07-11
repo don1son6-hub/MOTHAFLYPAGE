@@ -1,0 +1,44 @@
+document.addEventListener("DOMContentLoaded", () => {
+  const yearSpan = document.getElementById("year");
+  if (yearSpan) {
+    yearSpan.textContent = new Date().getFullYear();
+  }
+
+  const form = document.getElementById("consultationForm");
+  const status = document.getElementById("formStatus");
+
+  if (form) {
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const phone = document.getElementById("phone").value.trim();
+      const service = document.getElementById("service").value;
+      const message = document.getElementById("message").value.trim();
+
+      if (!name || !email || !service || !message) {
+        status.textContent = "Please fill in all required fields.";
+        return;
+      }
+
+      const toEmail = "dontejeffers88@gmail.com"; // <-- put your email here
+      const subject = encodeURIComponent("New MOTHa Fly Consultation Request");
+      const bodyLines = [
+        `Name: ${name}`,
+        `Email: ${email}`,
+        `Phone: ${phone || "N/A"}`,
+        `Service: ${service}`,
+        "",
+        "Message:",
+        message
+      ];
+      const body = encodeURIComponent(bodyLines.join("\n"));
+
+      const mailtoLink = `mailto:${toEmail}?subject=${subject}&body=${body}`;
+      window.location.href = mailtoLink;
+
+      status.textContent = "Opening your email app to send the consultation request...";
+    });
+  }
+});
