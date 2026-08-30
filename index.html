@@ -1,265 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MOTHA FLY Managing & Holding Company</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      color: #222;
-      background-color: #f9f9f9;
-    }
-
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1rem 2rem;
-      background-color: #fff;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-
-    .logo img {
-      height: 60px;
-    }
-
-    nav a {
-      margin-left: 1.5rem;
-      text-decoration: none;
-      color: #333;
-      font-weight: 600;
-      transition: color 0.3s ease;
-    }
-
-    nav a:hover {
-      color: #0078d7;
-    }
-
-    .hero {
-      background: linear-gradient(135deg, #0078d7, #00b4d8);
-      color: #fff;
-      text-align: center;
-      padding: 6rem 2rem;
-    }
-
-    .hero h1 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-    }
-
-    .hero p {
-      font-size: 1.2rem;
-      max-width: 700px;
-      margin: 0 auto 2rem;
-    }
-
-    .cta-button {
-      background-color: #fff;
-      color: #0078d7;
-      padding: 0.75rem 1.5rem;
-      border-radius: 30px;
-      text-decoration: none;
-      font-weight: 600;
-      transition: background-color 0.3s ease, color 0.3s ease;
-    }
-
-    .cta-button:hover {
-      background-color: #0078d7;
-      color: #fff;
-    }
-
-    .section {
-      padding: 4rem 2rem;
-      text-align: center;
-    }
-
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 2rem;
-      margin-top: 2rem;
-    }
-
-    .card {
-      background-color: #fff;
-      padding: 2rem;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-      transition: transform 0.3s ease;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-    }
-
-    .consultation-form {
-      max-width: 600px;
-      margin: 2rem auto;
-      text-align: left;
-    }
-
-    .form-row {
-      margin-bottom: 1rem;
-    }
-
-    label {
-      display: block;
-      margin-bottom: 0.5rem;
-      font-weight: 600;
-    }
-
-    input, select, textarea {
-      width: 100%;
-      padding: 0.75rem;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      font-size: 1rem;
-    }
-
-    textarea {
-      resize: none;
-      maxlength: 350;
-    }
-
-    .footer {
-      background-color: #222;
-      color: #fff;
-      text-align: center;
-      padding: 1.5rem;
-    }
-
-    .calendar-section {
-      margin-top: 3rem;
-      text-align: center;
-    }
-
-    .calendar-section a {
-      display: inline-block;
-      margin-top: 1rem;
-      background-color: #0078d7;
-      color: #fff;
-      padding: 0.75rem 1.5rem;
-      border-radius: 30px;
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    .calendar-section a:hover {
-      background-color: #005fa3;
-    }
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>MOTHa Fly Managing & Holding Company</title>
+<link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
-    <div class="logo">
-      <img src="mflogo26.png" alt="MOTHA Fly Logo" />
-    </div>
-    <nav>
-      <a href="#services">Services</a>
-      <a href="#mission">Mission</a>
-      <a href="#consultation">Free Consultation & Services</a>
-    </nav>
-  </header>
-
-  <main>
-    <section class="hero">
-      <h1>MOTHA Fly Managing & Holding Company</h1>
-      <p>Clean structure. Clear strategy. Real results. Showcasing web development, business systems, and growth-focused solutions for partners and clients.</p>
-      <a href="#consultation" class="cta-button">Book Your Free Consultation or Service</a>
-    </section>
-
-    <section id="services" class="section">
-      <h2>What We Do</h2>
-      <div class="cards">
-        <div class="card">
-          <h3>Web Development & Digital Presence</h3>
-          <p>Simple, effective websites that convert visitors into real leads.</p>
-        </div>
-        <div class="card">
-          <h3>Business Structure & Holding Strategy</h3>
-          <p>Support for managing entities and scaling with confidence.</p>
-        </div>
-        <div class="card">
-          <h3>Business Credit & Growth Planning</h3>
-          <p>Guidance on building business credit and preparing for funding opportunities.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="mission" class="section">
-      <h2>Our Mission</h2>
-      <p>MOTHA Fly exists to turn ideas into organized, fundable, and scalable businesses. We design clear structures, build credible digital footprints, and connect partners with systems that make growth simple.</p>
-    </section>
-
-    <section id="consultation" class="section">
-      <h2>Free Consultation Call</h2>
-      <p>Ready to talk? Share a few details and we’ll follow up to schedule a call.</p>
-
-     <form 
-  id="consultationForm" 
-  class="consultation-form"
-  action="https://formsubmit.co/mfsupport@mothafly.com"
-  method="POST"
->
-  <div class="form-row">
-    <label for="name">Full Name</label>
-    <input type="text" id="name" name="name" required placeholder="Your name" />
-  </div>
-
-  <div class="form-row">
-    <label for="email">Email</label>
-    <input type="email" id="email" name="email" required placeholder="you@example.com" />
-  </div>
-
-  <div class="form-row">
-    <label for="phone">Phone (optional)</label>
-    <input type="tel" id="phone" name="phone" placeholder="(555) 555-5555" />
-  </div>
-
-  <div class="form-row">
-    <label for="service">What do you need help with?</label>
-    <select id="service" name="service" required>
-      <option value="">Select one</option>
-      <option value="web-development">Web development / website</option>
-      <option value="holding-structure">Managing / holding company structure</option>
-      <option value="business-credit">Business credit & funding prep</option>
-      <option value="other">Other (describe below)</option>
-    </select>
-  </div>
-
-  <div class="form-row">
-    <label for="message">Brief description (350 characters max)</label>
-    <textarea id="message" name="message" rows="4" maxlength="350" required placeholder="Tell us what you’re working on and what you need."></textarea>
-  </div>
-
-  <!-- Hidden fields -->
-  <input type="hidden" name="_subject" value="New Consultation Request">
-  <input type="hidden" name="_captcha" value="false">
-  <input type="hidden" name="_template" value="table">
-
-  <button type="submit" class="cta-button">Request Consultation</button>
-</form>
-
-      <div class="calendar-section">
-        <h3>Schedule Your Free Consultation</h3>
-        <p>Use the link below to book directly on our calendar.</p>
-        <a href="https://app.squareup.com/appointments/book/qnufpjtv84n6mv/L30W27GPR0XDD/start"target="_blank">Open Calendar</a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <p>© <span id="year"></span> MOTHA Fly Managing & Holding Company. All rights reserved.</p>
-  </footer>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
-</body>
-</html>
+<header class="header">
+<div class="logo">MOTHa Fly</div>
+<nav class="nav">
+<a href="#services">Services</a>
+<a href="#mission">Mission</a>
+<a href="#about">About Us</a>
+<a href="#program">Economic Development Program</a>
+<a href="#partners">Partners</a>
+<a href="#stories">Success Stories</a>
+<a href="#consultation">Free Consultation</a>
+</nav>
+</header>
+<main>
+<section class="hero fade-up">
+<div class="hero-content">
+<h1>MOTHa Fly Managing & Holding Company</h1>
+<p>
+Clean structure. Clear strategy. Real results.<br />
+Showcasing web development, business systems, and growth-focused solutions for partners and clients.
+</p>
+<a href="#consultation" class="cta-button">Book Your Free Consultation</a>
+</div>
+<img src="images/hero-banner.jpg" alt="MOTHa Fly Hero Banner" class="fade-up" />
+</section>
+<section id="services" class="section fade-up">
+<h2>What We Do</h2>
+<div class="cards">
+<div class="card">
+<img src="images/web-development.jpg" alt="Web Development" />
+<h3>Web Development & Digital Presence</h3>
+<p>Simple, effective websites that get straight to the point—built to convert visitors into real leads.</p>
+</div>
+<div class="card">
+<img src="images/business-structure.jpg" alt="Business Structure" />
+<h3>Business Structure & Holding Strategy</h3>
+<p>Support for managing entities, holding companies, and operational clarity so partners can scale with confidence.</p>
+</div>
+<div class="card">
+<img src="images/business-credit.jpg" alt="Business Credit" />
+<h3>Business Credit & Growth Planning</h3>
+<p>Guidance on building business credit, organizing finances, and preparing for funding opportunities.</p>
+</div>
+</div>
+</section>
+<section id="mission" class="section section-alt fade-up">
+<h2>Our Mission</h2>
+<p class="mission-text">
+MOTHa Fly Managing & Holding Company exists to turn ideas into organized, fundable, and scalable businesses.
+Our mission is to design clear structures, build credible digital footprints, and connect partners with systems
+that make growth simple. We focus on practical execution—web development, business organization, and credit
+readiness—so our clients can move from vision to action without getting lost in complexity.
+</p>
+<img src="images/mission-banner.jpg" alt="Mission Banner" class="fade-up" />
+</section>
+<section id="about" class="section section-alt fade-up">
+<h2>About Us</h2>
+<p class="about-text">
+MOTHa Fly Managing & Holding Company was built with one purpose: to create structure, opportunity, and economic freedom for people who are ready to change their lives.
+We combine business development, partner-based services, and community-focused programs to help individuals build real income, real stability, and real independence.
+</p>
+<h3>What MOTHa Fly Provides Through Our Partners</h3>
+<ul class="about-list">
+<li><strong>Business Consultations & Startup Guidance</strong> — Clear steps for launching a business with structure and confidence.</li>
+<li><strong>Sneaker Cleaning Business Setup</strong> — Turning simple skills into profitable, organized service companies.</li>
+<li><strong>Box Truck Dispatching & Logistics Development</strong> — Building dispatch systems, compliance processes, and revenue pathways for new operators.</li>
+<li><strong>Property Maintenance, Lawn Care & Snow Removal</strong> — Connecting clients with partner services that create immediate earning opportunities.</li>
+<li><strong>Web Development & Digital Presence</strong> — Clean, effective websites designed to convert and build credibility.</li>
+<li><strong>Business Credit & Holding Company Structure</strong> — Helping clients build fundable entities and long-term financial stability.</li>
+</ul>
+<h3>100% of Profits Go Toward the Cause</h3>
+<p>
+Every dollar of profit generated by MOTHa Fly goes directly into funding our Economic Development Program.
+These funds help us provide vouchers, stipends, startup support, and operational funding to help individuals
+stabilize financially and build toward independence.
+</p>
+<img src="images/about-us.jpg" alt="About Us" class="fade-up" />
+</section>
+<section id="program" class="section fade-up">
+<h2>Economic Development Program</h2>
+<p>
+The MOTHa Fly Economic Development Program helps individuals overcome financial hardship through structured support, business development, and income-producing opportunities.
+</p>
+<div class="cards">
+<div class="card">
+<img src="images/vouchers.jpg" alt="Vouchers" />
+<h3>Vouchers</h3>
+<p>Transportation, supplies, and essential services to help individuals stabilize and move forward.</p>
+</div>
+<div class="card">
+<img src="images/stipends.jpg" alt="Stipends" />
+<h3>Stipends</h3>
+<p>Short-term financial assistance to help people get out of difficult situations while building income.</p>
+</div>
+<div class="card">
+<img src="images/startup-support.jpg" alt="Startup Support" />
+<h3>Startup Support</h3>
+<p>Guidance, structure, and resources to help individuals launch service-based businesses.</p>
+</div>
+<div class="card">
+<img src="images/business-systems.jpg" alt="Business Systems" />
+<h3>Business Systems</h3>
+<p>Access to dispatching systems, web development, and partner services that create real earning opportunities.</p>
+</div>
+</div>
+</section>
+<section id="partners" class="section section-alt fade-up">
+<h2>Our Partners</h2>
+<p>These partners help us deliver real services, real opportunities, and real results.</p>
+<div class="cards">
+<div class="card">
+<img src="images/sneaker-cleaning.jpg" alt="Sneaker Cleaning" />
+<h3>Sneaker Cleaning Specialists
