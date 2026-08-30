@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
       }
 
-      const toEmail = "dontejeffers88@gmail.com"; // <-- put your email here
+      const toEmail = "mfod247@gmail.com"; // <-- put your email here
       const subject = encodeURIComponent("New MOTHa Fly Consultation Request");
       const bodyLines = [
         `Name: ${name}`,
