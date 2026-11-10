@@ -302,3 +302,14 @@ main {
     height: 160px;
   }
 }
+
+.logo {
+  width: 200px;
+  height: 200px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
