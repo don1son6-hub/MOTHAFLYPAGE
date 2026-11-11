@@ -78,7 +78,7 @@
   </p>
   <div class="center">
 
- 
+
     <img src="images/logo.png" alt="Mission Image" class="fade-up logo" />
    </div>
 </section>
@@ -133,19 +133,25 @@
   <div class="cards">
 
     <div class="card">
-      <img src="images/sneaker partners.jpeg" alt="Sneaker Partners" />
+      <a href="https://book.squareup.com/appointments/qnufpjtv84n6mv/location/L30W27GPR0XDD/services/JEQGRMGBGNAE76JTU7FVJ4VL" target="_blank" rel="noopener noreferrer" aria-label="Book sneaker cleaning services">
+        <img src="images/sneaker partners.jpeg" alt="Sneaker Partners" />
+      </a>
       <h3>SNEAKER CLEANING SPECIALISTS</h3>
       <p>Turning simple skills into structured, profitable businesses.</p>
     </div>
 
     <div class="card">
-      <img src="images/IMG_3004.jpg" alt="Landscaping Partners" />
+      <a href="https://book.squareup.com/appointments/qnufpjtv84n6mv/location/L30W27GPR0XDD/services" target="_blank" rel="noopener noreferrer" aria-label="Book landscaping services">
+        <img src="images/IMG_3004.jpg" alt="Landscaping Partners" />
+      </a>
       <h3>LANDSCAPING PARTNERS</h3>
       <p>Lawn care, snow removal, and seasonal upkeep.</p>
     </div>
 
     <div class="card">
-      <img src="images/free consultation.png" alt="Property Management" />
+      <a href="https://book.squareup.com/appointments/qnufpjtv84n6mv/location/L30W27GPR0XDD/services" target="_blank" rel="noopener noreferrer" aria-label="Book property management services">
+        <img src="images/free consultation.png" alt="Property Management" />
+      </a>
       <h3>PROPERTY MANAGEMENT PARTNERS</h3>
       <p>Rental oversight, tenant coordination, and maintenance support.</p>
     </div>
@@ -162,6 +168,35 @@
      class="cta-button" target="_blank">
      BOOK FREE CONSULTATION
   </a>
+</section>
+
+<!-- FREE SERVICE REQUEST -->
+<section id="service-request" class="section section-alt fade-up">
+  <h2>FREE SERVICE REQUEST</h2>
+  <p>Tell us what service you need. Submitting an inquiry is completely free.</p>
+  <form id="service-request-form" action="https://formspree.io/f/mzerpvge" method="POST" style="max-width:600px;margin:24px auto;display:grid;gap:14px;text-align:left;">
+    <label for="request-name">Full Name</label>
+    <input id="request-name" name="name" type="text" autocomplete="name" required style="width:100%;box-sizing:border-box;padding:12px;" />
+    <label for="request-email">Email Address</label>
+    <input id="request-email" name="email" type="email" autocomplete="email" required style="width:100%;box-sizing:border-box;padding:12px;" />
+    <label for="request-phone">Phone Number (Optional)</label>
+    <input id="request-phone" name="phone" type="tel" autocomplete="tel" style="width:100%;box-sizing:border-box;padding:12px;" />
+    <label for="request-service">Service Needed</label>
+    <select id="request-service" name="service" required style="width:100%;box-sizing:border-box;padding:12px;">
+      <option value="">Select a service</option>
+      <option>Web Development & Digital Presence</option>
+      <option>Business Structure & Holding Strategy</option>
+      <option>Business Credit & Growth Planning</option>
+      <option>Sneaker Cleaning</option>
+      <option>Lawn Care & Landscaping</option>
+      <option>Property Management & Maintenance</option>
+      <option>Other Service</option>
+    </select>
+    <label for="request-description">Brief Description of Your Request</label>
+    <textarea id="request-description" name="description" rows="5" maxlength="2000" required placeholder="Briefly describe what you need help with..." style="width:100%;box-sizing:border-box;padding:12px;"></textarea>
+    <button class="cta-button" type="submit" style="cursor:pointer;border:0;">SUBMIT MY FREE SERVICE REQUEST</button>
+    <p style="font-size:0.9rem;">Your request will be submitted directly to MOTHA FLY. No payment is required.</p>
+  </form>
 </section>
 
 <!-- FOOTER -->
